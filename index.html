@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Meera Patel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3a7a4c1e04.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header" onclick="closemenu()">Home</a></li>
+                <li><a href="#about" onclick="closemenu()">About</a></li>
+                <li><a href="#services" onclick="closemenu()">Highlights</a></li>
+                <li><a href="#portfolio" onclick="closemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                <i class="fa-solid fa-xmark"onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <!--<p>Engineer</p>-->
+            <h1>   Hi, I'm <span>Meera</span><br>From New Zealand</h1>
+        </div>
+    </div>
+</div>
+
+<!----------------------------about-------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a professional Mechatronics Engineer with expertise in system integration, design, and troubleshooting who is eager to transition towards software development.  I possess the skills and determination necessary to thrive in this new direction with several years of experience in the field and a strong passion for coding.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>                    
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Critical Thinking and Problem-solving</span><br>Analyze complex problems and develop effective solutions.</li>
+                        <li><span>UI Design</span><br>Design and build HMI/SCADA control interfaces.</li>
+                        <li><span>Programming Languages</span><br>Python, Java, C, C#, C++, SQL, VBScript, HTML, CSS, Matlab, R.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>2020 - Present</span><br>Project Engineer (Building Automation) at Honeywell.</li>
+                        <li><span>2019 - 2020</span><br>Quality Assisstant at KiwiRail.</li>
+                        <li><span>2018 - 2019 & 2017 - 2018</span><br>Intern at KiwiRail.</li>
+                        <li><span>2016 - 2017</span><br>Casual Sales Professional at David Jones.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>BE(Hons)</span><br>Mechatronics Engineering - University of Auckland.</li>
+                        <li><span>NCEA</span><br>Onslow College.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------services-------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Career Highlights</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-people-group"></i>
+                <h2>Lead Project Engineer</h2>
+                <p>Demonstrated exceptional leadership and project management skills for a multi-million dollar project spanning nine sites nationwide.</p>
+                <!---<a href="#">Learn more</a>-->
+            </div>
+            <div>
+                <i class="fa-solid fa-book-open-reader"></i>
+                <h2>Subject Matter Expert</h2>
+                <p>Demonstrated initiative by becoming proficient in new security software through self-study, including server installation, configuration, and operation.</p>
+                <!---<a href="#">Learn more</a>-->
+            </div>
+            <div>
+                <i class="fa-solid fa-clock"></i>
+                <h2>Optimise Production</h2>
+                <p>Successfully implemented task instructions and applied Lean manufacturing principles to significantly improve efficiency and reduce production time.</p>
+                <!---<a href="#">Learn more</a>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------portfolio-------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Personal Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/location.png">
+                <div class="layer">
+                    <h3>Vision-Based Indoor Localisation for People & Robots</h3>
+                    <p>Evaluated the feasibility of using software as a GPS alternative for indoor navigation on 
+                        smartphones.</p>
+                    <!--<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>-->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/wordle.png">
+                <div class="layer">
+                    <h3>WORDLE Answer Eliminator</h3>
+                    <p>Program to present all possible answers based on previous guesses for the game WORDLE.</p>
+                    <!--<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>-->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/minesweeper.png">
+                <div class="layer">
+                    <h3>Minesweepr Helper</h3>
+                    <p>AI tool to play safe moves in the game Minesweeper.</p>
+                    <!--<a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>-->
+                </div>
+            </div>
+        </div>
+        <!---<a href="#" class="btn">See more</a>-->
+    </div>
+</div>
+<!----------------------------contact-------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> meera-patel@hotmail.com</p>
+                <div class="social-icons">
+                    <a href="https://github.com/meera-409/"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.linkedin.com/in/meera-patel-204a67181/"><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+                <a href="Images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Meera. Made with <i class="fa-solid fa-heart"></i> and help from Easy Tutorials</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }        
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwK-7P3ND0sotcr3Y0OVQvw1N9h6hd1N6PMgs_8QNZekENkAYJN5HbzmvN9GN0MuM6tRg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
