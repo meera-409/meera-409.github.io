@@ -8,7 +8,8 @@
     <link rel="icon" href="Images/femaleicon.png">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/3a7a4c1e04.js" crossorigin="anonymous"></script>
-</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
 <body>
 <div id="header">
     <div class="container">
@@ -29,7 +30,7 @@
             <!---<h1>   Hi, I'm <span>Meera</span><br>From New Zealand</h1>-->
             <div class="text-1">Hello, my name is</div>
             <div class="text-2">Meera Patel</div>
-            <div class="text-3">And I'm a Mechatronics Engineer</div>
+            <div class="text-3">And I'm a <span class="typing"></span></div>
         </div>
     </div>
 </div>
@@ -219,6 +220,15 @@
             btn.style.background = '#437f97'
         })
         .catch(error => console.error('Error!', error.message))
+    })
+</script>
+    
+<script>
+    var typed = new Typed(".typing", {
+        strings: ["Mechatronics Engineer", "Software Developer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
     })
 </script>
 </body>
