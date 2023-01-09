@@ -87,6 +87,11 @@ nav ul li a:hover::after{
     font-size: 30px;
 }
 
+.header-text .text-3 span{
+    color: #681ace;
+    font-weight: 600;
+}
+
 /*----------------------------about--------------------------*/
 #about{
     padding: 80px 0;
