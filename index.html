@@ -155,7 +155,7 @@
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                    <button id="buttonsub" type="submit" class="btn btn2">Submit</button>
                 </form>
                 <span id="msg"></span>
             </div>
@@ -166,7 +166,7 @@
     </div>
 </div>
 
-
+<!----------------------------script-------------------------->
 
 <script>
 
@@ -195,24 +195,31 @@
         sidemenu.style.right = "-200px"
     }
 </script>
-
-  <script>
+    
+<script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwK-7P3ND0sotcr3Y0OVQvw1N9h6hd1N6PMgs_8QNZekENkAYJN5HbzmvN9GN0MuM6tRg/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
-  
+    const btn = document.getElementById("buttonsub")
+
     form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    // disable button and set colour to grey
+        btn.disabled = true;
+        btn.style.background = 'grey'
+        e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
             msg.innerHTML = "Message sent successfully"
             setTimeout(function(){
                 msg.innerHTML = ""
             },5000)
             form.reset()
+            //enable button and change back colour
+            btn.disabled = false;
+            btn.style.background = '#437f97'
         })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+</script>
 </body>
 </html>
