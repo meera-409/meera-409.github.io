@@ -40,7 +40,7 @@ body{
     height: 100vh;
     background-image: url(Images/background.png);
     background-size: cover;
-    background-position: center;
+    background-position: top right;
     background-attachment: fixed;
 }
 .container{
