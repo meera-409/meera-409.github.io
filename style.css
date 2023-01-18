@@ -10,6 +10,7 @@ html{
 body{
     background: #080808;
     color: #fff;
+    
 }
 .scroll-up-btn {
     position: fixed;
@@ -45,6 +46,7 @@ body{
 }
 .container{
     padding: 10px 10%;
+    position: relative;
 }
 
 
@@ -59,6 +61,12 @@ nav{
     padding: 15px 5%;
     position: fixed;
     z-index:10000;
+}
+
+.anchor {
+    position: absolute;
+    top: -130px; /* given the fixed header is 50px tall, and you want 15px padding */
+    left: 0px;
 }
 
 .logo{
@@ -94,7 +102,7 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 20%;
+    margin-top: 30%;
     padding: 20px;
     font-size: 30px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -383,10 +391,10 @@ nav .fa-solid{
         background-position: center;
     }
     .container{
-        padding: 100px 10%;
+        padding: 10px 10%;
     }
     .header-text{
-        /* margin-top: 12%; */
+        margin-top: 50%;
         font-size: 25px;
         width: 325px;
         /* height: 350px; */
@@ -450,6 +458,12 @@ nav .fa-solid{
     }
     .copyright{
         font-size: 12px;
+    }
+    #about{
+        padding: 30px 0;
+    }
+    .anchor {
+        top: -100px; /* given the fixed header is 50px tall, and you want 15px padding */
     }
 
 }
