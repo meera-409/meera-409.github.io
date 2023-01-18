@@ -47,15 +47,22 @@ body{
     padding: 10px 10%;
 }
 
+
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: #080808;
+    width: 100%;
+    margin: 0;
+    padding: 15px 5%;
+    position: fixed;
+    z-index:10000;
 }
 
 .logo{
-    width: 140px;
+    height: 70px;
 }
 
 nav ul li{
@@ -88,7 +95,13 @@ nav ul li a:hover::after{
 
 .header-text{
     margin-top: 20%;
+    padding: 20px;
     font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: #ff0000; */
+    border-radius: 6px;
+    margin-right: 0px;
+    width: 520px;
 }
 .header-text h1{
     font-size: 60px;
@@ -369,9 +382,14 @@ nav .fa-solid{
         background-image: url(Images/phone-background.png);
         background-position: center;
     }
+    .container{
+        padding: 100px 10%;
+    }
     .header-text{
-        margin-top: 12%;
+        /* margin-top: 12%; */
         font-size: 25px;
+        width: 325px;
+        /* height: 350px; */
     }
     .header-text h1{
         font-size: 35px;
