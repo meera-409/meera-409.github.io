@@ -163,6 +163,10 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: #fff;
 }
+.abouttext{
+    text-align: justify;
+    text-justify: inter-word;
+}
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
@@ -211,6 +215,7 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    text-align: center;
 }
 .services-list div{
     background: #262626;
@@ -394,22 +399,22 @@ nav .fa-solid{
         padding: 10px 10%;
     }
     .header-text{
-        margin-top: 40vh;
+        margin-top: 100px;
         font-size: 25px;
-        width: 49vw;
+        width: 80vw;
         /* height: 350px; */
     }
     .header-text h1{
         font-size: 35px;
     }
     .header-text .text-1{
-        font-size: 3vw;
+        font-size: 5vw;
     }
     .header-text .text-2{
-        font-size: 6.5vw;
+        font-size: 10vw;
     }
     .header-text .text-3{
-        font-size: 2.5vw;
+        font-size: 4vw;
     }
     nav .fa-solid{
         display: block;
