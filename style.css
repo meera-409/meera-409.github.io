@@ -394,9 +394,9 @@ nav .fa-solid{
         padding: 10px 10%;
     }
     .header-text{
-        margin-top: 50%;
+        margin-top: 40vh;
         font-size: 25px;
-        width: 48vw;
+        width: 49vw;
         /* height: 350px; */
     }
     .header-text h1{
