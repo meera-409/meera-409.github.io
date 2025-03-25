@@ -394,6 +394,7 @@ nav .fa-solid{
     #header{
         background-image: url(Images/phone-background.png);
         background-position: center;
+        width: 100vw;
     }
     .container{
         padding: 10px 10%;
